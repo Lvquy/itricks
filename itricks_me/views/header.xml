@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="custom_header_2" inherit_id="website.layout" name="Custom Header" customize_show="True">
+        <xpath expr="//header" position="before">
+            <header>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+                <nav class="navbar navbar-expand-lg navbar-light py-3">
+                    <div class="container">
+                        <a class="navbar-brand" href="/">
+                            <img style="height:50px; widht:auto;" src="/itricks_me/static/description/icon.png"/>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-medium" href="/contactus"><i class="far fa-lightbulb text-primary"></i> About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-medium" href="https://fb.com/otnon.ictu" target="_blank"><i class="fab fa-facebook text-primary"></i> FacebookGroup</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-medium" href="/web/login"><i class="fas fa-sign-in-alt text-primary"></i> Join itricks team</a>
+                                </li>
+                            </ul>
+                            <div class="d-block d-lg-none">
+                                <ul class="navbar-nav mr-auto">
+                                    <t t-if="website.user_id != user_id">
+                                    <li>
+                                        <b>
+                                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem"><i class="fas fa-sign-out-alt text-primary"></i> Logout</a>
+                                        </b>
+                                    </li>
+                                    </t>
+                                <t t-else="">
+                                    <li class="nav-item">
+                                        <a class="nav-link font-weight-medium" href="/web/login"><i class="fas fa-fingerprint text-primary"></i> Login</a>
+                                    </li>
+                                </t>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-lg-block">
+                            <ul class="navbar-nav mr-auto">
+                                <t t-if="website.user_id != user_id">
+                                    <li>
+                                        <b>
+                                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem"><i class="fas fa-sign-out-alt text-primary"></i> Logout</a>
+                                        </b>
+                                    </li>
+                                    </t>
+                                <t t-else="">
+                                    <li class="nav-item">
+                                        <a class="nav-link font-weight-medium" href="/web/login"><i class="fas fa-fingerprint text-primary"></i> Login</a>
+                                    </li>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </header>
+        </xpath>
+    </template>
+</odoo>

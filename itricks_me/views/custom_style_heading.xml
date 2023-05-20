@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="custom_style" name="Custom style heading tag" inherit_id="website.homepage">
+        <xpath expr="." position="inside">
+<!--            <link rel="stylesheet" href="/kiem_toan/static/src/css/style.css"/>-->
+            <style>
+                h6 {
+                    font-weight: bold;
+                    font-style: italic;
+                    color: red;
+                    font-family:Helvetica;
+                    font-size: 45px;
+                    text-shadow: 0 0 2rem #000, 0 0 1.5rem #000;
+                    }
+            </style>
+        </xpath>
+    </template>
+</odoo>

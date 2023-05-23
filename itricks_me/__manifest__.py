@@ -8,7 +8,7 @@
     'author': 'Lv Quy',
     'company': '#',
     'website': 'https://itricks.me',
-    'depends': ['base_setup','website'],
+    'depends': ['base_setup','website','website_blog'],
     'data': [
         #data
 
@@ -20,6 +20,7 @@
         'views/custom_footer.xml',
         'views/header.xml',
         'views/custom_style_heading.xml',
+        'views/backend_edit_content.xml',
     ],
 
     'assets': {

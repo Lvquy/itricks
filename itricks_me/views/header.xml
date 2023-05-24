@@ -7,7 +7,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light py-3">
                     <div class="container">
                         <a class="navbar-brand" href="/">
-                            <img style="height:50px; widht:auto;" src="/itricks_me/static/img/logo.png"/>
+                            <img style="height:30px; widht:auto;" src="/itricks_me/static/img/logo.png"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

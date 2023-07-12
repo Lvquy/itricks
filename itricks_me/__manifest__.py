@@ -19,13 +19,14 @@
         # views
         'views/custom_footer.xml',
         'views/header.xml',
-        'views/custom_style_heading.xml',
         'views/backend_edit_content.xml',
     ],
 
     'assets': {
+        'web.assets_frontend': [
+        ],
         'web.assets_backend': [
-            'itricks_me/static/src/css/style.css'
+            'itricks_me/static/src/css/style.css',
         ],
         'web._assets_primary_variables': [
         ],

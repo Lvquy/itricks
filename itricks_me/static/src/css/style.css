@@ -1,0 +1,13 @@
+#top_menu li {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+
+#top_menu ul {
+  background: #1F568B;
+  list-style-type: none;
+  text-align: center;
+}

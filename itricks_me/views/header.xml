@@ -1,70 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <template id="custom_header_2" inherit_id="website.layout" name="Custom Header" customize_show="True">
-        <xpath expr="//header" position="before">
+    <template id="custom_nav" inherit_id="website.user_navbar" name="custom nav" customize_show="True">
+        <xpath expr="//nav[@id='oe_main_menu_navbar']" position="after">
+
+        </xpath>
+    </template>
+
+
+    <template id="custom_header" inherit_id="website.layout" name="Custom Header test" customize_show="True">
+        <xpath expr="//header" position="replace">
             <header>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-                <nav class="navbar navbar-expand-lg navbar-light py-3">
-                    <div class="container">
-                        <a class="navbar-brand" href="/">
-                            <img style="height:30px; widht:auto;" src="/itricks_me/static/img/logo.png"/>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
+                <body id="body-pd">
+                    <header class="header" id="header">
+                        <link rel="stylesheet" type="text/css" href="/itricks_me/static/src/css/style.css"/>
+                        <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+                        <div class="header_toggle">
+                            <i class='bx bx-menu' id="header-toggle"></i>
+                        </div>
+                        <!--                        =====-->
+                        <div id="top_menu">
+                            <ul>
                                 <li class="nav-item">
-                                    <a class="nav-link font-weight-medium" href="/contactus"><i class="far fa-lightbulb text-primary"></i> About Us</a>
+                                    <a class="nav-link font-weight-medium" href="/contactus">
+                                        <i class="far fa-lightbulb text-primary"></i>
+                                        About Us
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link font-weight-medium" href="https://www.facebook.com/groups/615446590298282" target="_blank"><i class="fab fa-facebook text-primary"></i> FacebookGroup</a>
+                                    <a class="nav-link font-weight-medium"
+                                       href="https://www.facebook.com/groups/615446590298282" target="_blank">
+                                        <i class="fab fa-facebook text-primary"></i>
+                                        FacebookGroup
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link font-weight-medium" href="/web/login"><i class="fas fa-sign-in-alt text-primary"></i> Join itricks team</a>
+                                    <a class="nav-link font-weight-medium" href="/web/login">
+                                        <i class="fas fa-sign-in-alt text-primary"></i>
+                                        Join itricks team
+                                    </a>
                                 </li>
                             </ul>
-                            <div class="d-block d-lg-none">
-                                <ul class="navbar-nav mr-auto">
-                                    <t t-if="website.user_id != user_id">
-                                    <li>
-                                        <b>
-                                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem"><i class="fas fa-sign-out-alt text-primary"></i> Logout</a>
-                                        </b>
-                                    </li>
-                                    </t>
-                                <t t-else="">
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-medium" href="/web/login"><i class="fas fa-fingerprint text-primary"></i> Login</a>
-                                    </li>
-                                </t>
-                                </ul>
+                        </div>
+                        <!--                 ==========-->
+                        <div class="header_img">
+                            <img src="https://i.imgur.com/hczKIze.jpg" alt=""/>
+
+                        </div>
+
+                        <link rel="stylesheet" type="text/css"
+                              href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"/>
+                        <link rel="stylesheet" type="text/css"
+                              href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"/>
+                        <link rel="stylesheet" type="text/css"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
+                        <link rel="stylesheet" type="text/css"
+                              href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+                        <link rel="stylesheet" type="text/css" href="/itricks_me/static/src/css/css.css"/>
+                    </header>
+                    <div class="l-navbar" id="nav-bar">
+                        <nav class="nav">
+                            <div>
+                                <a href="#" class="nav_logo">
+                                    <i class='bx bx-layer nav_logo-icon'></i>
+                                    <span class="nav_logo-name">BBBootstrap</span>
+                                </a>
+                                <div class="nav_list">
+                                    <a href="#" class="nav_link active">
+                                        <i class='bx bx-grid-alt nav_icon'></i>
+                                        <span class="nav_name">Dashboard</span>
+                                    </a>
+                                    <a href="#" class="nav_link">
+                                        <i class='bx bx-user nav_icon'></i>
+                                        <span class="nav_name">Users</span>
+                                    </a>
+                                    <a href="#" class="nav_link">
+                                        <i class='bx bx-message-square-detail nav_icon'></i>
+                                        <span class="nav_name">Messages</span>
+                                    </a>
+                                    <a href="#" class="nav_link">
+                                        <i class='bx bx-bookmark nav_icon'></i>
+                                        <span class="nav_name">Bookmark</span>
+                                    </a>
+                                    <a href="#" class="nav_link">
+                                        <i class='bx bx-folder nav_icon'></i>
+                                        <span class="nav_name">Files</span>
+                                    </a>
+                                    <a href="#" class="nav_link">
+                                        <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                                        <span class="nav_name">Stats</span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="d-none d-lg-block">
-                            <ul class="navbar-nav mr-auto">
-                                <t t-if="website.user_id != user_id">
-                                    <li>
-                                        <b>
-                                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem"><i class="fas fa-sign-out-alt text-primary"></i> Logout</a>
-                                        </b>
-                                    </li>
-                                    </t>
-                                <t t-else="">
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-medium" href="/web/login"><i class="fas fa-fingerprint text-primary"></i> Login</a>
-                                    </li>
-                                </t>
-                            </ul>
-                        </div>
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-log-out nav_icon'></i>
+                                <span class="nav_name">SignOut</span>
+                            </a>
+                        </nav>
                     </div>
-
-                </nav>
+                    <!--Container Main start-->
+                    <!--                    <div class="height-100 bg-light">-->
+                    <!--                        <h4>iTricks.me | Wellcome to home!</h4>-->
+                    <!--&lt;!&ndash;                        <t t-call="website_blog.blog_post_short"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        <t t-call="website_blog.posts_loop"/>&ndash;&gt;-->
+                    <!--                    </div>-->
+                    <!--Container Main end-->
+                    <script src="/itricks_me/static/src/js/js.js"></script>
+                </body>
             </header>
         </xpath>
     </template>
+
+
 </odoo>

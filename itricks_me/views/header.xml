@@ -6,7 +6,6 @@
         </xpath>
     </template>
 
-
     <template id="custom_header" inherit_id="website.layout" name="Custom Header test" customize_show="True">
         <xpath expr="//header" position="replace">
             <header>
@@ -18,7 +17,7 @@
                         <div class="header_toggle">
                             <i class='bx bx-menu' id="header-toggle"></i>
                         </div>
-                        <!--                        =====-->
+                        <!--=====-->
                         <div class="top_menu">
                             <ul id="top_menu">
                                 <li class="nav-item">

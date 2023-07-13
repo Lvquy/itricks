@@ -19,9 +19,13 @@
 
                     .navv li {
                       display: inline-block !important;
-                      font-size: 20px !important;
+                      font-size: 18px !important;
                       padding: 20px !important;
                     }
+                    .text-success1{
+                        color:#810079fc;
+                    }
+
                 </style>
                 <body id="body-pd">
                     <header class="header" id="header">
@@ -33,9 +37,10 @@
                         </div>
 
                         <ul class="navv">
-                            <li><a href="#home"><i class="far fa-lightbulb text-primary"> About Us</i></a></li>
-                            <li><a href="#about"><i class="fab fa-facebook text-primary"> FacebookGroup</i></a></li>
-                            <li><a href="#clients"><i class="fas fa-sign-in-alt text-primary"> Join itricks team</i></a></li>
+                            <li><a href="/"><i class="fas fa-home text-success1"> Home</i></a></li>
+                            <li><a href="/contactus"><i class="far fa-lightbulb text-success1 font-weight-bold"> About Us</i></a></li>
+                            <li><a href="https://fb.com/groups/615446590298282" target="_blank"><i class="fab fa-facebook text-success1 font-weight-bold"> FacebookGroup</i></a></li>
+                            <li><a href="/web/login"><i class="fas fa-sign-in-alt text-success1"> Join itricks team</i></a></li>
                         </ul>
 
                         <div class="header_img">
@@ -58,20 +63,20 @@
                             <div>
                                 <a href="#" class="nav_logo">
                                     <i class='bx bx-layer nav_logo-icon'></i>
-                                    <span class="nav_logo-name">BBBootstrap</span>
+                                    <span class="nav_logo-name">All</span>
                                 </a>
                                 <div class="nav_list">
                                     <a href="#" class="nav_link active">
                                         <i class='bx bx-grid-alt nav_icon'></i>
-                                        <span class="nav_name">Dashboard</span>
+                                        <span class="nav_name">Công nghệ</span>
                                     </a>
                                     <a href="#" class="nav_link">
                                         <i class='bx bx-user nav_icon'></i>
-                                        <span class="nav_name">Users</span>
+                                        <span class="nav_name">Lập Trình</span>
                                     </a>
                                     <a href="#" class="nav_link">
                                         <i class='bx bx-message-square-detail nav_icon'></i>
-                                        <span class="nav_name">Messages</span>
+                                        <span class="nav_name">Phần Mềm</span>
                                     </a>
                                     <a href="#" class="nav_link">
                                         <i class='bx bx-bookmark nav_icon'></i>

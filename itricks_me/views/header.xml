@@ -21,17 +21,16 @@
                         <div class="top_menu">
                             <ul id="top_menu">
                                 <li class="nav-item m-2">
-                                    <a class="nav-link font-weight-medium" href="/contactus">
-                                        <i class="far fa-lightbulb text-primary"></i>About Us</a>
+                                    <a class="nav-link font-weight-medium" href="/contactus">About Us</a>
+<!--                                    <i class="far fa-lightbulb text-primary"></i>-->
                                 </li>
                                 <li class="nav-item m-2">
-                                    <a class="nav-link font-weight-medium"
-                                       href="https://www.facebook.com/groups/615446590298282" target="_blank">
-                                        <i class="fab fa-facebook text-primary"></i>FacebookGroup</a>
+                                    <a class="nav-link font-weight-medium" href="https://www.facebook.com/groups/615446590298282" target="_blank">FacebookGroup</a>
+<!--                                    <i class="fab fa-facebook text-primary"></i>-->
                                 </li>
                                 <li class="nav-item m-2">
-                                    <a class="nav-link font-weight-medium" href="/web/login">
-                                        <i class="fas fa-sign-in-alt text-primary"></i>Join itricks team</a>
+                                    <a class="nav-link font-weight-medium" href="/web/login">Join itricks team</a>
+<!--                                    <i class="fas fa-sign-in-alt text-primary"></i>-->
                                 </li>
                             </ul>
                         </div>

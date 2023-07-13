@@ -2,10 +2,8 @@
 <odoo>
 <!--    <template id="custom_nav" inherit_id="website.user_navbar" name="custom nav" customize_show="True">-->
 <!--        <xpath expr="//nav[@id='oe_main_menu_navbar']" position="after">-->
-
 <!--        </xpath>-->
 <!--    </template>-->
-
     <template id="custom_header" inherit_id="website.layout" name="Custom Header test" customize_show="True">
         <xpath expr="//header" position="replace">
             <header>
@@ -23,9 +21,8 @@
                       padding: 16px !important;
                     }
                     .text-success1{
-                        color:#810079fc;
+                        color:#f67501;
                     }
-
                 </style>
                 <body id="body-pd">
                     <header class="header" id="header">
@@ -61,7 +58,8 @@
                         <nav class="nav">
                             <div>
                                 <a href="#" class="nav_logo">
-                                    <i class='bx bx-layer nav_logo-icon'></i>
+<!--                                    <i class='bx bx-layer nav_logo-icon'></i>-->
+                                    <i class='bx bxs-bell bx-tada nav_logo-icon'></i>
                                     <span class="nav_logo-name">All</span>
                                 </a>
                                 <div class="nav_list">
@@ -110,6 +108,4 @@
             </header>
         </xpath>
     </template>
-
-
 </odoo>

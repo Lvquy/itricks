@@ -19,8 +19,8 @@
 
                     .navv li {
                       display: inline-block !important;
-                      font-size: 18px !important;
-                      padding: 20px !important;
+                      font-size: 16px !important;
+                      padding: 16px !important;
                     }
                     .text-success1{
                         color:#810079fc;
@@ -44,8 +44,7 @@
                         </ul>
 
                         <div class="header_img">
-                            <img src="https://i.imgur.com/hczKIze.jpg" alt=""/>
-
+                            <img t-attf-src="data:image/jpg;base64,{{ res_company.logo }}" align="left"  width="15" style='margin:0px;padding-top:0px;' />
                         </div>
 
                         <link rel="stylesheet" type="text/css"

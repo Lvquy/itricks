@@ -1,10 +1,12 @@
 #top_menu li {
   display: inline-block;
   height: 40px;
+  width:100%
   line-height: 40px;
 }
 
 #top_menu ul {
   list-style-type: none;
   text-align: center;
+  width:100%
 }

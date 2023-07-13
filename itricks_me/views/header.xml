@@ -9,6 +9,20 @@
     <template id="custom_header" inherit_id="website.layout" name="Custom Header test" customize_show="True">
         <xpath expr="//header" position="replace">
             <header>
+                <style>
+                    .navv {
+                      list-style-type: none !important;
+                      text-align: center !important;
+                      margin: 0 !important;
+                      padding: 0 !important;
+                    }
+
+                    .navv li {
+                      display: inline-block !important;
+                      font-size: 20px !important;
+                      padding: 20px !important;
+                    }
+                </style>
                 <body id="body-pd">
                     <header class="header" id="header">
                         <link rel="stylesheet" type="text/css" href="/itricks_me/static/src/css/style.css"/>
@@ -17,24 +31,13 @@
                         <div class="header_toggle">
                             <i class='bx bx-menu' id="header-toggle"></i>
                         </div>
-                        <!--=====-->
-                        <div class="top_menu">
-                            <ul id="top_menu" class="mr-3 pr-2">
-                                <li class="nav-item m-2">
-                                    <a class="nav-link font-weight-medium" href="/contactus">
-                                        <i class="far fa-lightbulb text-primary"></i> About Us</a>
-                                </li>
-                                <li class="nav-item m-2">
-                                    <a class="nav-link font-weight-medium mr-2" href="https://www.facebook.com/groups/615446590298282" target="_blank">
-                                        <i class="fab fa-facebook text-primary"></i> FacebookGroup</a>
-                                </li>
-                                <li class="nav-item m-2">
-                                    <a class="nav-link font-weight-medium mr-2" href="/web/login">
-                                        <i class="fas fa-sign-in-alt text-primary"></i> Join itricks team</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--                 ==========-->
+
+                        <ul class="navv">
+                            <li><a href="#home"><i class="far fa-lightbulb text-primary"> About Us</i></a></li>
+                            <li><a href="#about"><i class="fab fa-facebook text-primary"> FacebookGroup</i></a></li>
+                            <li><a href="#clients"><i class="fas fa-sign-in-alt text-primary"> Join itricks team</i></a></li>
+                        </ul>
+
                         <div class="header_img">
                             <img src="https://i.imgur.com/hczKIze.jpg" alt=""/>
 

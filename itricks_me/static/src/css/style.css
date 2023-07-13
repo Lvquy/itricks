@@ -3,10 +3,12 @@
   height: 40px;
   width:100%
   line-height: 40px;
+  margin:2rem;
 }
 
 #top_menu ul {
   list-style-type: none;
   text-align: center;
-  width:100%
+  width:100%;
+  margin:2rem;
 }

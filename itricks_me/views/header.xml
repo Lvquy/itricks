@@ -19,7 +19,7 @@
                         </div>
                         <!--=====-->
                         <div class="top_menu">
-                            <ul id="top_menu m-2">
+                            <ul id="top_menu" class="m-2">
                                 <li class="nav-item m-2">
                                     <a class="nav-link font-weight-medium" href="/contactus">
                                         <i class="far fa-lightbulb text-primary"></i> About Us</a>

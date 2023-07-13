@@ -44,7 +44,7 @@
                         </ul>
 
                         <div class="header_img">
-                            <img t-attf-src="data:image/jpg;base64,{{ res_company.logo }}" align="left"  width="15" style='margin:0px;padding-top:0px;' />
+                            <img t-attf-src="data:image/jpg;base64,{{ res_company.logo }}" align="left"  width="10" style='margin:0px;padding-top:0px;' />
                         </div>
 
                         <link rel="stylesheet" type="text/css"

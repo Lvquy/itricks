@@ -1,9 +1,7 @@
 #top_menu li {
   display: inline-block;
-  width: 120px;
   height: 40px;
   line-height: 40px;
-
 }
 
 #top_menu ul {
